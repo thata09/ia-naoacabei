@@ -179,7 +179,7 @@
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
     camera.position.z = window.innerWidth < 768 ? 7.5 : 5.8;
-    camera.position.x = window.innerWidth < 768 ? 0 : 0.8;
+    camera.position.x = window.innerWidth < 768 ? 0 : -0.85;
 
     const renderer = new THREE.WebGLRenderer({
       canvas: canvas,
@@ -278,6 +278,12 @@
     function animateThree(timestamp) {
       requestAnimationFrame(animateThree);
 
+      // Otimização: se o usuário rolou além da seção inicial, pausa renderização para poupar recursos
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollY > window.innerHeight * 1.1) {
+        return;
+      }
+
       framesThisSecond++;
       if (timestamp - lastFpsUpdate >= 1000) {
         state.fps = framesThisSecond;
@@ -316,11 +322,35 @@
 
     requestAnimationFrame(animateThree);
 
+    // Suavização do elemento 3D durante a rolagem para nunca sobrepor texto
+    function handleScrollFade() {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const heroHeight = window.innerHeight || 800;
+      const fadeThreshold = heroHeight * 0.65;
+
+      if (!container) return;
+
+      if (scrollY <= 0) {
+        container.style.opacity = '0.9';
+        container.style.visibility = 'visible';
+      } else if (scrollY >= fadeThreshold) {
+        container.style.opacity = '0';
+        container.style.visibility = 'hidden';
+      } else {
+        const factor = Math.max(0, 1 - (scrollY / fadeThreshold));
+        container.style.opacity = (factor * 0.9).toFixed(3);
+        container.style.visibility = 'visible';
+      }
+    }
+
+    window.addEventListener('scroll', handleScrollFade, { passive: true });
+    handleScrollFade();
+
     // Ajuste dinâmico de redimensionamento de tela
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;
       camera.position.z = window.innerWidth < 768 ? 7.5 : 5.8;
-      camera.position.x = window.innerWidth < 768 ? 0 : 0.8;
+      camera.position.x = window.innerWidth < 768 ? 0 : -0.85;
       camera.updateProjectionMatrix();
 
       renderer.setSize(window.innerWidth, window.innerHeight);
