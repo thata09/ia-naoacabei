@@ -76,7 +76,6 @@
           <li class="nav-item">
             <a href="#projetos" class="nav-link" data-magnetic>
               <span class="nav-index">03</span> Projetos
-              <span class="nav-badge">Em breve</span>
             </a>
           </li>
           <li class="nav-item">
@@ -249,11 +248,288 @@
       </div>
     </section>
 
-    <section id="projetos" class="stage-placeholder" aria-label="Galeria de Projetos">
-      <div class="placeholder-card">
-        <span class="placeholder-badge">ETAPA 4 — PENDENTE</span>
-        <h2>03 // PROJETOS</h2>
-        <p>Esta seção será implementada na Etapa 4 após sua autorização, apresentando projetos reais e escolares verificados em meu GitHub oficial.</p>
+    <!-- ==================== SEÇÃO 03 // PROJETOS (ETAPA 4) ==================== -->
+    <section id="projetos" class="projects-section" aria-label="Galeria de Projetos e Repositórios">
+      <div class="projects-container">
+        
+        <!-- Cabeçalho da Seção -->
+        <header class="section-header">
+          <div class="section-meta">
+            <span class="meta-tag"><span class="meta-icon">◈</span> 03 // REPOSITÓRIOS OFICIAIS</span>
+            <span class="meta-tag hide-mobile">SOURCE: GITHUB.COM/THALITA04</span>
+          </div>
+          <h2 class="section-title">
+            PROJETOS &amp; <span class="text-highlight">CÓDIGO</span>
+          </h2>
+          <p class="section-subtitle">
+            Seleção de projetos práticos e acadêmicos desenvolvidos no curso técnico de Informática, cobrindo desenvolvimento de APIs REST, aplicações web integradas e programação orientada a objetos.
+          </p>
+
+          <!-- Banner Destaque GitHub Profile -->
+          <div class="github-profile-card">
+            <div class="github-profile-info">
+              <div class="github-avatar-badge" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </div>
+              <div class="github-profile-text">
+                <span class="github-profile-title">GitHub Oficial — Thalita04</span>
+                <span class="github-profile-handle">@Thalita04 // Mais de 60 repositórios públicos</span>
+              </div>
+            </div>
+            <a href="https://github.com/Thalita04" target="_blank" rel="noopener noreferrer" class="btn-github-visit" data-magnetic aria-label="Abrir perfil de Thalita no GitHub em nova aba">
+              <span>ACESSAR PERFIL</span>
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Filtros Interativos por Categoria -->
+          <div class="project-filters" role="tablist" aria-label="Filtrar projetos por tecnologia">
+            <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">TODOS [8]</button>
+            <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">PYTHON [3]</button>
+            <button class="filter-btn" data-filter="javascript" role="tab" aria-selected="false">JAVASCRIPT [3]</button>
+            <button class="filter-btn" data-filter="java" role="tab" aria-selected="false">JAVA [2]</button>
+          </div>
+        </header>
+
+        <!-- Grid de Cards de Projetos -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Projeto 1: API Carro (Python) -->
+          <article class="project-card" data-category="python">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">PYTHON // REST API</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">API-CARRO — POST / GET / PUT</h3>
+            <p class="card-description">
+              Implementação de API RESTful em Python estruturada para manipulação e persistência de dados veiculares, gerenciando requisições com métodos HTTP, validação de payloads e respostas em JSON.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">Python</span>
+              <span class="card-pill">REST API</span>
+              <span class="card-pill">JSON</span>
+              <span class="card-pill">CRUD</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/API-CARRO---POST-GET-PUT" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 2: Atividade API Jogos (Python) -->
+          <article class="project-card" data-category="python">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">PYTHON // REST API</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Atividade-API — JOGOS</h3>
+            <p class="card-description">
+              Serviço backend para catálogo de jogos eletrônicos, cobrindo rotas completas de cadastro, consulta filtrada, edição e exclusão de itens com códigos de status HTTP semânticos.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">Python</span>
+              <span class="card-pill">Endpoints</span>
+              <span class="card-pill">CRUD</span>
+              <span class="card-pill">Estrutura de Dados</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/Atividade-API---JOGOS---POST-GET-PUT-thali" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 3: Cadastro Front-Back (JavaScript) -->
+          <article class="project-card" data-category="javascript">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">JAVASCRIPT // FULLSTACK</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Cadastro Front-Back</h3>
+            <p class="card-description">
+              Aplicação web com comunicação assíncrona entre interface visual e servidor backend, formulários dinâmicos, sanitização de campos e renderização em tempo real de registros cadastrados.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">JavaScript</span>
+              <span class="card-pill">HTML5</span>
+              <span class="card-pill">CSS3</span>
+              <span class="card-pill">Fetch API</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/Cadastro-Front-Back-tha" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 4: App de Clima (JavaScript) -->
+          <article class="project-card" data-category="javascript">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">JAVASCRIPT // WEB API</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Clima App — Consulta Meteorológica</h3>
+            <p class="card-description">
+              Interface interativa para consulta de condições meteorológicas globais, consumindo dados externos via API REST com tratamento de erros de conexão e visual moderno adaptado.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">JavaScript</span>
+              <span class="card-pill">Consumo de APIs</span>
+              <span class="card-pill">Assíncrono</span>
+              <span class="card-pill">UI Design</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/clima-tha" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 5: Câmeras Fotográficas (Java) -->
+          <article class="project-card" data-category="java">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">JAVA // POO &amp; ACADÊMICO</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Câmeras Fotográficas Redivo</h3>
+            <p class="card-description">
+              Sistema orientado a objetos em Java para modelagem e catálogo de equipamentos fotográficos, encapsulamento de atributos, construtores e métodos para controle de estoque e especificações.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">Java</span>
+              <span class="card-pill">POO</span>
+              <span class="card-pill">Encapsulamento</span>
+              <span class="card-pill">Classes</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/CAMERAS-FOTOGRAFICAS-REDIVO" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 6: AG-APP-3 (Java) -->
+          <article class="project-card" data-category="java">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">JAVA // SOFTWARE DEV</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">AG-APP-3 — Sistema de Gestão</h3>
+            <p class="card-description">
+              Aplicação de apoio escolar desenvolvida na disciplina de Desenvolvimento de Software, aplicando conceitos de arquitetura em camadas, modularização e boas práticas em Java.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">Java</span>
+              <span class="card-pill">Software Dev</span>
+              <span class="card-pill">Modularização</span>
+              <span class="card-pill">Lógica</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/AG-APP-3" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 7: Funcionário (Python) -->
+          <article class="project-card" data-category="python">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">PYTHON // GESTÃO DE DADOS</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Gestão de Funcionários</h3>
+            <p class="card-description">
+              Módulo de gerenciamento e manipulação de registros de colaboradores em Python, explorando validação de regras de negócio, cálculos automáticos de jornada e organização em coleções.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">Python</span>
+              <span class="card-pill">Lógica</span>
+              <span class="card-pill">CRUD</span>
+              <span class="card-pill">Regras de Negócio</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/funcionario" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Projeto 8: Mini Sistema com Matéria Regular (JavaScript) -->
+          <article class="project-card" data-category="javascript">
+            <div class="card-glow" aria-hidden="true"></div>
+            <div class="card-header">
+              <span class="card-category">JAVASCRIPT // SISTEMA WEB</span>
+              <span class="card-status-dot" title="Repositório Ativo"></span>
+            </div>
+            <h3 class="card-title">Mini Sistema com Matéria Regular</h3>
+            <p class="card-description">
+              Projeto interdisciplinar integrando conceitos de Inteligência Artificial e disciplinas da formação regular, desenvolvendo interface interativa focada em usabilidade e aprendizado prático.
+            </p>
+            <div class="card-techs">
+              <span class="card-pill">JavaScript</span>
+              <span class="card-pill">Interdisciplinar</span>
+              <span class="card-pill">DOM</span>
+              <span class="card-pill">Frontend</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/Thalita04/-IA---Mini-Sistema-com-Mat-ria-Regular" target="_blank" rel="noopener noreferrer" class="card-link" data-magnetic>
+                <span>VER NO GITHUB</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+                  <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Rodapé da Seção com Banner GitHub -->
+        <div class="projects-cta-box">
+          <div class="projects-cta-text">
+            <h3>Quer ver mais códigos e experimentos?</h3>
+            <p>Tenho mais de 60 repositórios públicos no GitHub com tarefas escolares, exercícios práticos e protótipos de interfaces.</p>
+          </div>
+          <a href="https://github.com/Thalita04" target="_blank" rel="noopener noreferrer" class="btn-primary" data-magnetic>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+            <span>VER TODOS NO GITHUB (@Thalita04)</span>
+          </a>
+        </div>
+
       </div>
     </section>
 

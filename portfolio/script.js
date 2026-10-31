@@ -518,7 +518,41 @@
   }
 
   // --------------------------------------------------------------------------
-  // 10. INICIALIZAÇÃO GERAL
+  // 10. FILTRO DE PROJETOS POR CATEGORIA (ETAPA 4)
+  // --------------------------------------------------------------------------
+  function initProjectFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    if (!filterButtons.length || !projectCards.length) return;
+
+    filterButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const selectedFilter = btn.getAttribute('data-filter');
+
+        // Atualizar botões
+        filterButtons.forEach((b) => {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Filtrar cards
+        projectCards.forEach((card) => {
+          const cardCategory = card.getAttribute('data-category');
+          if (selectedFilter === 'all' || cardCategory === selectedFilter) {
+            card.classList.remove('is-hidden');
+          } else {
+            card.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 11. INICIALIZAÇÃO GERAL
   // --------------------------------------------------------------------------
   window.addEventListener('DOMContentLoaded', () => {
     initOpeningSequence();
@@ -529,6 +563,7 @@
     initMobileMenu();
     initHeaderScroll();
     initScrollSpy();
+    initProjectFilters();
   });
 
 })();

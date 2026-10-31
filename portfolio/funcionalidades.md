@@ -22,7 +22,7 @@ Este documento registra o status e a prioridade de cada funcionalidade do projet
 | **08** | Micro-interações Táteis (Efeito Magnético) | **Implementada** | Atração magnética elástica nos botões do hero e header ao aproximar o mouse. |
 | **09** | Acessibilidade & Prefers-Reduced-Motion | **Testada** | Suporte a leitores de tela, foco visível (`:focus-visible`) e desativação de animações se solicitado pelo SO. |
 | **10** | Seção Sobre Mim | **Pendente** | Aguardando autorização da etapa seguinte (Etapa 3). |
-| **11** | Galeria de Projetos | **Pendente** | Aguardando autorização (Etapa 4); utilizará repositórios reais do GitHub da Thalita. |
+| **11** | Galeria de Projetos | **Implementada** | Seção 03 implementada com 8 repositórios reais do GitHub da Thalita, filtros por tecnologia (Python, JS, Java), card de perfil e links diretos. |
 | **12** | Seção Contato | **Pendente** | Aguardando autorização (Etapa 5); e-mail oficial, GitHub e validações reais. |
 | **13** | Transições Durante a Rolagem | **Pendente** | Aguardando etapas de seções subsequentes (Etapa 6). |
 | **14** | Modo Claro e Escuro | **Pendente** | Refinamento programado para a Etapa 6. |
@@ -37,3 +37,4 @@ Este documento registra o status e a prioridade de cada funcionalidade do projet
 - **Etapa 1:** Planejamento concluído. Criação e estruturação de `AGENTS.md`, `identidade.md`, `referencias.md` e `funcionalidades.md`.
 - **Etapa 2:** Hero implementado com tipografia cinética, elemento 3D WebGL (Three.js), cursor magnético, header e botões de ação com foco em acessibilidade e responsividade.
 - **Refinamento Responsivo Multiplataforma:** Adaptação completa para mobile (celulares de 320px a 480px, tablets) e desktop/computador (laptops compactos de 1366x768, monitores 1080p e ultra-wide). Implementação de menu drawer mobile com animação do botão hambúrguer para 'X', toque tátil para rotação 3D no celular, header glassmorphic dinâmico ao rolar, Spy Scroll para links ativos, touch targets de 48px e prevenção de overflow horizontal.
+- **Etapa 4 (Galeria de Projetos & GitHub):** Implementação completa da seção de Projetos conectada ao GitHub oficial `@Thalita04`, com cards interativos, filtros por linguagem (Python, JavaScript, Java), links diretos e banner para o perfil completo.
