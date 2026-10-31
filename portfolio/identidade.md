@@ -4,12 +4,15 @@
 
 - **Nome Completo:** Thalita de Oliveira Terrazan
 - **Idade:** 17 anos
-- **Perfil Acadêmico:** Estudante do curso técnico de Informática
-- **Interesses Principais:** Tecnologia, programação, desenvolvimento de sites, design visual e interfaces digitais
-- **Tecnologias Praticadas:** Python, HTML, CSS e Java
+- **Instituição de Ensino:** Instituto Educacional Raphael di Santo
+- **Formação Atual:** 3º ano do Ensino Médio — último ano do Curso Técnico de Informática (formanda)
+- **Área de Interesse & Foco:** Front-End, Criação de Telas e UI/UX Design
+- **Tecnologias Praticadas:** Python, HTML, CSS, JavaScript e Java
 - **Idiomas:**
   - Português: Língua nativa
-  - Inglês: Nível intermediário
+  - Inglês: Nível intermediário (praticado com músicas internacionais)
+- **Hobbies & Inspirações:** Música em inglês, fã dedicada de BTS e K-pop
+- **Avatar Oficial:** `portfolio/thalita-avatar.jpg`
 - **Projetos:** Trabalhos escolares e projetos práticos hospedados em seu GitHub oficial
 - **E-mail de Contato:** thalitaoliveira473@gmail.com
 - **GitHub Oficial:** [https://github.com/Thalita04](https://github.com/Thalita04)
